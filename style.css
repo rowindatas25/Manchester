@@ -1,0 +1,195 @@
+h1,
+h2 {
+    text-align: center;
+}
+
+div.container {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+div.topnav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 50px;
+    width: 100%;
+    border-radius: 10px ridge;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: #E00E0B;
+}
+
+body {
+    background-color: #FBFBFF;
+    margin: 0;
+    width: 100%;
+}
+
+.table,
+th,
+td {
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}
+
+div.titles {
+    background-color: #E00E0B;
+    min-height: 500px;
+    max-width: 100%;
+}
+
+div.records {
+    display: flex;
+    background-color: #000000;
+    min-height: 700px;
+    border: 1px solid black;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-flow: column-wrap;
+    font-weight: bold;
+}
+
+div.head,
+div.league,
+div.fa,
+div.total,
+div#record,
+div#goal,
+div#big {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 450px;
+}
+
+div.league,
+div.fa,
+div.total,
+div#record,
+div#caps,
+div#goal,
+div#big {
+    color: white;
+}
+
+div.wins {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+
+div.prem,
+div.cup {
+    display: flex;
+    min-width: 475px;
+    min-height: 600px;
+    border-radius: 10px;
+    border: solid 1px black;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.app,
+div.goals,
+div.best {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 30px;
+}
+
+div.best {
+    margin-bottom: 50px;
+}
+
+
+div.years {
+	margin-left: 25px;
+}
+
+
+div.container :hover {
+    color: blue;
+}
+
+div.container :active {
+    color: orange;
+}
+
+
+[class="1908"],
+[class="1911"],
+[class="1952"],
+[class="1956"],
+[class="1957"],
+[class="1965"],
+[class="1967"],
+[class="1993"],
+[class="1994"],
+[class="1996"],
+[class="1997"],
+[class="1999"],
+[class="2000"],
+[class="2001"],
+[class="2003"],
+[class="2007"],
+[class="2008"],
+[class="2009"],
+[class="2011"],
+[class="2013"],
+[class="1909"],
+[class="1948"],
+[class="1963"],
+[class="1977"],
+[class="1983"],
+[class="1985"],
+[class="1990"],
+[class="1992"],
+[class="2004"],
+[class="2006"],
+[class="2010"],
+[class="2016"],
+[class="2017"] {
+    display: flex;
+    border: 1px solid #303847;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    min-width: 300px;
+    min-height: 50px;
+    flex-shrink: 1;
+    float: left;
+    color: white;
+}
+
+div.moments {
+    color: blue;
+}

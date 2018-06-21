@@ -1,0 +1,21 @@
+{
+  "name": "html_practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "red.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "html_practice"
+  },
+  "author": "Rohtas Wadera",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "0.10.0"
+  },
+  "dependencies": {
+    "connect": "^3.6.6"
+  }
+}
