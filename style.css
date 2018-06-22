@@ -105,14 +105,15 @@ div.wins {
 div.prem,
 div.cup {
     display: flex;
-    min-width: 475px;
-    min-height: 600px;
-    border-radius: 10px;
-    border: solid 1px black;
     justify-content: center;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
+    min-width: 475px;
+    min-height: 600px;
+    border-radius: 10px;
+    border: solid 1px black;
+   
 }
 
 div.app,
