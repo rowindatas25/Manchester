@@ -29,7 +29,15 @@ event.respondWith(
 				return response;
 			}
 			else {
-				return fetch(event.request);
+				return fetch(event.request)
+				.then(function(res) {
+					caches.open('dynamic')
+					.then(function(cache) {
+						console.log('Dynamic cache is working');
+						cache.put(event.request.url, res.clone());
+						return res;
+					})
+				});
 			}
 		})
 	);
