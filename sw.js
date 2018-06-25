@@ -1,5 +1,12 @@
 self.addEventListener('install', function(event) {
 	console.log('[Service Worker] Installing Service Worker', event);
+	event.waitUntil(
+	caches.open('static')
+		.then(function(cache) {
+			console.log('Precaching app shell');
+			cache.add('index.html');
+		})
+	);
 });
 
 self.addEventListener('activate', function(event) {
@@ -8,6 +15,6 @@ self.addEventListener('activate', function(event) {
 });
 
 self.addEventListener('fetch', function(event) {
-	console.log('Service worker fetching', event);
+event.respondWith(fetch(event.request));
 });
 
