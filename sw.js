@@ -4,7 +4,13 @@ self.addEventListener('install', function(event) {
 	caches.open('static')
 		.then(function(cache) {
 			console.log('Precaching app shell');
-			cache.add('index.html');
+			cache.addAll([
+						'/',
+						'index.html',
+						'style.css',
+						'United.ico',
+				]);
+			
 		})
 	);
 });
@@ -15,6 +21,17 @@ self.addEventListener('activate', function(event) {
 });
 
 self.addEventListener('fetch', function(event) {
-event.respondWith(fetch(event.request));
+event.respondWith(
+		caches.match(event.request)
+		// Here we are intercepting the request and checking if it's in the cache/
+		.then(function(response) {
+			if (response) {
+				return response;
+			}
+			else {
+				return fetch(event.request);
+			}
+		})
+	);
 });
 
