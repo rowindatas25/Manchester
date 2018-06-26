@@ -53,6 +53,7 @@ td {
 
 div.titles {
     background-color: #E00E0B;
+    display: flex;
     min-height: 500px;
     max-width: 100%;
 }
@@ -94,7 +95,7 @@ div#big {
 
 div.wins {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     max-width: 100%;
