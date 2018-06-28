@@ -1,5 +1,5 @@
-var STATIC_CACHE = 'static-v3';
-var DYNAMIC_CACHE = 'dynamic-v2';
+var STATIC_CACHE = 'static-v19';
+var DYNAMIC_CACHE = 'dynamic-v6';
 
 
 self.addEventListener('install', function(event) {

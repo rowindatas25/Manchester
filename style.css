@@ -53,7 +53,6 @@ td {
 
 div.titles {
     background-color: #E00E0B;
-    display: flex;
     min-height: 500px;
     max-width: 100%;
 }
@@ -139,7 +138,7 @@ div.years {
 
 
 div.container :hover {
-    color: blue;
+    color: purple;
 }
 
 div.container :active {
@@ -194,5 +193,8 @@ div.container :active {
 }
 
 div.moments {
-    color: blue;
+    background-color: blue;
+    height: 700px;
+    width: 100%;
+    opacity: .5;
 }

@@ -16,6 +16,7 @@
     "http-server": "0.10.0"
   },
   "dependencies": {
-    "connect": "^3.6.6"
+    "connect": "^3.6.6",
+    "idb": "^2.1.3"
   }
 }
