@@ -66,6 +66,12 @@ div.records {
     flex-direction: column;
     flex-flow: column-wrap;
     font-weight: bold;
+} 
+
+
+#notifications {
+    width: 10%;
+    margin: 0 auto;
 }
 
 div.head,
@@ -113,6 +119,7 @@ div.cup {
     min-height: 600px;
     border-radius: 10px;
     border: solid 1px black;
+    overflow-y: scroll;
    
 }
 

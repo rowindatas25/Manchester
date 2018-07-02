@@ -1,5 +1,13 @@
-var STATIC_CACHE = 'static-v19';
-var DYNAMIC_CACHE = 'dynamic-v6';
+importScripts('/Manchester/idb.js');
+
+var STATIC_CACHE = 'static-v22';
+var DYNAMIC_CACHE = 'dynamic-v9';
+
+var dbPromise = idb.open('moments', 1, function (db) {
+	if (!db.objectStoreNames.contains('videos')) {}
+	db.createObjectStore('videos', {keyPath: 'id'});
+	console.log('database is connected!');
+})
 
 
 self.addEventListener('install', function(event) {
