@@ -5,7 +5,7 @@
 		{
 			"src": "/United.ico",
 			"type": "image/ico",
-			"sizes": "256x256"
+			"sizes": "144x144"
 		}
 	],
 	"start_url": "/index.html",
