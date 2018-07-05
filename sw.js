@@ -1,6 +1,6 @@
 
-var STATIC_CACHE = 'static-v35';
-var DYNAMIC_CACHE = 'dynamic-v14';
+var STATIC_CACHE = 'static-v37';
+var DYNAMIC_CACHE = 'dynamic-v16';
 
 
 
