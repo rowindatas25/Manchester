@@ -30,7 +30,20 @@ window.addEventListener('beforeinstallprompt', function(event) {
 function confirmNotification() {
 	if ('serviceWorker' in navigator) {
 		var options = {
-		body: 'You successfully subscribed to this notification service!'
+		body: 'You successfully subscribed to this notification service!',
+		icon: '/United.ico',
+		dir: 'ltr',
+		lang: 'en-US',
+		vibrate: [100, 50, 200],
+		tag: 'confirm-notification',
+		renotify: true,
+		actions: [
+			{action: 'confirm', title: 'Okay', icon: '/United.ico'},
+			{action: 'cancel', title:'Cancel', icon: '/United.ico'}
+				
+		]
+			}
+			
 	};
 
 		navigator.serviceWorker.ready
@@ -40,7 +53,7 @@ function confirmNotification() {
 	}
 	
 
-}
+
 
 function permission() {
 	Notification.requestPermission(function(result) {
