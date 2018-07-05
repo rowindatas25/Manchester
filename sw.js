@@ -1,6 +1,6 @@
 
-var STATIC_CACHE = 'static-v49';
-var DYNAMIC_CACHE = 'dynamic-v28';
+var STATIC_CACHE = 'static-v51';
+var DYNAMIC_CACHE = 'dynamic-v30';
 
 
 
@@ -62,4 +62,24 @@ event.respondWith(
 		})
 	);
 });
+
+
+self.addEventListener('notificationclick', function(event) {
+	var notification = event.notification;
+	var action = event.action;
+
+	console.log(notification);
+
+	if (action === 'confirm') {
+		console.log('Confirm was chosen');
+		notification.close();
+	} else {
+		console.log(action);
+		notification.close();
+	}
+});
+
+self.addEventListener('notificationclose', function(event) {
+	console.log('notification was closed', event);
+})
 
