@@ -1,5 +1,5 @@
 var deferredPrompt;
-var enableNotifications = document.querySelectorAll('.notifications');
+var enableNotifications = document.querySelectorAll('.mdl-js-button');
 
 if (!window.Promise) {
 	window.Promise = Promise;
@@ -28,7 +28,18 @@ window.addEventListener('beforeinstallprompt', function(event) {
 });
 
 function confirmNotification() {
-	new Notification('Successfully Subscribed!');
+	if ('serviceWorker' in navigator) {
+		var options = {
+		body: 'You successfully subscribed to this notification service!'
+	};
+
+		navigator.serviceWorker.ready
+		.then(function(swregistration) {
+			swregistration.showNotification('Successfully Subscribed (from SW)!', options);
+		})
+	}
+	
+
 }
 
 function permission() {
