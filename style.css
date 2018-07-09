@@ -14,6 +14,12 @@ div.container {
     margin: 0 auto;
 }
 
+
+
+#loc {
+    background-color: white;
+}
+
 img {
 
     max-width: 100px;

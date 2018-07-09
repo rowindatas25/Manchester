@@ -1,6 +1,6 @@
 
-var STATIC_CACHE = 'static-v51';
-var DYNAMIC_CACHE = 'dynamic-v30';
+var STATIC_CACHE = 'static-v75';
+var DYNAMIC_CACHE = 'dynamic-v54';
 
 
 
@@ -15,6 +15,8 @@ self.addEventListener('install', function(event) {
 						'index.html',
 						'style.css',
 						'United.ico',
+						'https://fonts.googleapis.com/icon?family=Material+Icons',
+						'https://code.getmdl.io/1.3.0/material.red-indigo.min.css'
 				]);
 			
 		})

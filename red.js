@@ -1,6 +1,8 @@
 var deferredPrompt;
 var enableNotifications = document.querySelectorAll('.mdl-js-button');
 
+
+
 if (!window.Promise) {
 	window.Promise = Promise;
 }
@@ -40,18 +42,41 @@ function confirmNotification() {
 		actions: [
 			{action: 'confirm', title: 'Okay', icon: '/United.ico'},
 			{action: 'cancel', title:'Cancel', icon: '/United.ico'}
-				
 		]
 			}
 			
 	};
-
 		navigator.serviceWorker.ready
 		.then(function(swregistration) {
 			swregistration.showNotification('Successfully Subscribed (from SW)!', options);
 		})
 	}
 	
+
+function configPushSubscription(argument) {
+	if (!('serviceWorker' in navigator)) {
+		 return;
+	}
+	var reg;
+	navigator.serviceWorker.ready
+	.then(function(swregistration) {
+		reg = swregistration;
+		return swregistration.pushManager.getSubscription();
+	})
+		.then(function(sub) {
+			if (sub === null) {
+				// Create new sub
+				var PUBLIC_VAPID_KEY = 'BLYNyilu0zWki28Nki18ru-2gzoPtODMI_ev6q5UpSTzd9lv-c0L0EeFyK4BqRkQl07ckHfvpCBQaS9xzZ6_XIA';
+				var convertedKey = urlBase64ToUint8Array(PUBLIC_VAPID_KEY);
+				reg.pushManager.subscribe({
+					userVisibleOnly: true,
+					applicationServerKey: convertedKey
+
+				});
+			} 
+		});
+
+}
 
 
 
@@ -61,7 +86,8 @@ function permission() {
 		if (result !== 'granted') {
 			console.log('Permission was not granted!');
 		} else {
-			confirmNotification();
+			configPushSubscription();
+			//confirmNotification();
 		}
 	});
 }
@@ -75,3 +101,22 @@ if ('Notification' in window) {
 		console.log('Button is working');
 	}
 }
+
+
+function urlBase64ToUint8Array(base64String) {
+  var padding = '='.repeat((4 - base64String.length % 4) % 4);
+  var base64 = (base64String + padding)
+    .replace(/\-/g, '+')
+    .replace(/_/g, '/');
+
+  var rawData = window.atob(base64);
+  var outputArray = new Uint8Array(rawData.length);
+
+  for (var i = 0; i < rawData.length; ++i) {
+    outputArray[i] = rawData.charCodeAt(i);
+  }
+  return outputArray;
+}
+
+
+
