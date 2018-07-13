@@ -15,14 +15,25 @@
 </head>
 <body>
 	<div class="container">
-		<div class="topnav">
-
-			<a href="#home" class="active">Home</a>
-			<a href="#titles">Titles</a>
-			<a href="#records">Records</a>
-			<a href="#moments">Moments</a>
-			<a href="#legends">Legends</a>
-		</div>
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <div class="logo"><img class="pic" src="United.ico" alt=""></div>
+      <span class="mdl-layout-title">Manchester United</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="#Home">Titles</a>
+        <a class="mdl-navigation__link" href="#Records">Records</a>
+        <a class="mdl-navigation__link" href="#Moments">Moments</a>
+        <a class="mdl-navigation__link" href="#Legends">Legends</a>
+      </nav>
+    </div>
+  </header>
+</div>
 		<h1>Manchester United</h1>
 		<div class="image"><img src="United.ico" alt=""></div>
 		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
@@ -32,7 +43,7 @@
 
 		<h2><em>Glory, Glory,</em> <strong>Man United</strong></h2>
 		<div class="titles">
-			<a name="titles"></a>
+			<a name="Titles"></a>
 			<div class="head"><h2>Titles</h2></div>
 			<div class="wins">
 				<section>
@@ -96,7 +107,7 @@
 			</div>
 		</div>
 		<div class="records">
-			<a name="records"></a>
+			<a name="Records"></a>
 			<div id="record"><h2>Records</h2></div>
 
 			<div class="app">
@@ -284,7 +295,7 @@
 			</div>
 	
 			<div class="moments">
-				<a name="moments"></a>
+				<a name="Moments"></a>
 				<div id="mom"><h2>Moments</h2>
 <div class="frame"><iframe src="https://www.youtube.com/embed/TxDgwmtrB-I"  class= "ucl1" height="500" width="300" allowfullscreen></iframe> <br>
 <iframe src="https://www.youtube.com/embed/GpSwJWr-hMI" class="bike" frameborder="0"></iframe>

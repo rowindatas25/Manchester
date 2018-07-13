@@ -12,24 +12,38 @@ div.container {
 .mdl-js-button {
     width: 30%;
     margin: 0 auto;
+    margin-top: 10px;
 }
 
 
-
-#loc {
-    background-color: white;
-}
-
-img {
-
-    max-width: 100px;
-    max-height: 100px;
+.logo {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .image {
     display: flex;
     justify-content: center;
 }
+
+img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+img.pic {
+     max-width: 50px;
+     max-height: 50px;
+     margin-right: 30px;
+}
+
+
+#loc {
+    background-color: white;
+}
+
+
+
 
 div.topnav {
     display: flex;
@@ -157,14 +171,6 @@ div.years {
 }
 
 
-div.container :hover {
-    color: purple;
-}
-
-div.container :active {
-    color: orange;
-}
-
 
 [class="1908"],
 [class="1911"],
@@ -218,7 +224,7 @@ div.moments {
     align-items: center;
     flex-flow: row wrap;
     background-color: blue;
-    height: 750px;
+    height: 100%;
     width: 100%;
     opacity: .75;
     padding: 5px;
