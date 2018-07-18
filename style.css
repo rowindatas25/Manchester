@@ -2,6 +2,7 @@ h1,
 h2 {
     text-align: center;
     font-size: 20px;
+    color: white;
 }
 
 div.container {
@@ -68,6 +69,58 @@ body {
     margin: 0;
     width: 100%;
 }
+
+/*.mdl-js-data-table {
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}*/
+
+.mdl-data-table {
+    border: 1px solid rgba(0,0,0,.12);
+    border-collapse: collapse;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 13px;
+    background-color: #000000;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.mdl-data-table__cell--non-numeric {
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+.mdl-data-table__cell--non-numeric.mdl-data-table__cell--non-numeric {
+    text-align: center;
+}
+
+.mdl-data-table th {
+    position: relative;
+    vertical-align: bottom;
+    text-overflow: ellipsis;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0;
+    height: 48px;
+    font-size: 12px;
+    color: #fff;
+    padding-bottom: 8px;
+    box-sizing: border-box;
+
+    }
+
+.mdl-data-table td:hover {
+    color: red;
+}
+
+div.goals, div.best, div#record {
+    background-color: black;
+}
+
+
 
 .table,
 th,
@@ -215,7 +268,7 @@ div.years {
     min-height: 50px;
     flex-shrink: 1;
     float: left;
-    color: white;
+    color: black;
 }
 
 div.moments {
