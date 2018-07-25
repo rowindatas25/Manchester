@@ -71,7 +71,6 @@ a {
 }
 
 body {
-    background-color: #FBFBFF;
     margin: 0;
     width: 100%;
 }
@@ -81,6 +80,10 @@ body {
     color: white;
     text-align: center;
 }*/
+
+div.goals, div.best, div#record {
+    background-color: black;
+}
 
 .mdl-data-table {
     border: 1px solid rgba(0,0,0,.12);
@@ -122,9 +125,7 @@ body {
     color: red;
 }
 
-div.goals, div.best, div#record {
-    background-color: black;
-}
+
 
 
 
@@ -218,6 +219,7 @@ div.best {
     border-radius: 10px;
     border: 1px solid white;
     margin-top: 30px;
+    background-color: black;
 }
 
 div.best {
