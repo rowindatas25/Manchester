@@ -337,6 +337,15 @@ iframe.becks {
     border: 3px solid black;
 }
 
+span {
+    color: white;
+}
+
+span.mdl-list__item-text-body {
+    margin-top: 7px;
+    color: #fff;
+}
+
 
 
 
