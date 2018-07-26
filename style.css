@@ -22,6 +22,10 @@ div.container {
     margin-top: 10px;
 }
 
+i.material-icons {
+    color: white;
+}
+
 
 .logo {
     display: flex;
@@ -83,6 +87,7 @@ body {
 
 div.goals, div.best, div#record {
     background-color: black;
+    margin-bottom: 20px;
 }
 
 .mdl-data-table {
@@ -125,8 +130,9 @@ div.goals, div.best, div#record {
     color: red;
 }
 
-
-
+ .row tr:hover {
+    color: blue;
+}
 
 
 .table,
