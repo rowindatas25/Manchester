@@ -90,6 +90,10 @@ div.goals, div.best, div#record {
     margin-bottom: 20px;
 }
 
+.demo-list-three {
+  width: 650px;
+}
+
 .mdl-data-table {
     border: 1px solid rgba(0,0,0,.12);
     border-collapse: collapse;
@@ -343,6 +347,7 @@ span {
 
 span.mdl-list__item-text-body {
     margin-top: 7px;
+    margin-right: 7px;
     color: #fff;
 }
 
