@@ -85,7 +85,13 @@ body {
     text-align: center;
 }*/
 
-div.goals, div.best, div#record {
+div.container2 {
+    background-color: black;
+    height: 100%;
+}
+
+
+div.goals, div.best {
     background-color: black;
     margin-bottom: 20px;
 }
@@ -156,7 +162,6 @@ div.titles {
 div.records {
     display: flex;
     background-color: #000000;
-    min-height: 700px;
     border: 1px solid black;
     justify-content: space-between;
     flex-direction: column;
@@ -297,8 +302,12 @@ div.moments {
     background-color: blue;
     height: 100%;
     width: 100%;
-    opacity: .75;
+    opacity: .9;
     padding: 5px;
+}
+
+div#plays {
+    color: black;
 }
 
 div.frame {
@@ -348,7 +357,11 @@ span {
 span.mdl-list__item-text-body {
     margin-top: 7px;
     margin-right: 7px;
-    color: #fff;
+  
+}
+
+span#description{
+    color: white;
 }
 
 h2.stars {
