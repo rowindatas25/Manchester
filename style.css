@@ -26,6 +26,15 @@ i.material-icons {
     color: white;
 }
 
+.demo-card-square.mdl-card {
+  width: 350px;
+  height: 350px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url('https://pm1.narvii.com/6469/79020a8225038eb284db50e35b5e336a64f4cff0_128.jpg') bottom right 15% no-repeat #E9190F;
+}
 
 .logo {
     display: flex;
@@ -196,7 +205,8 @@ div.total,
 div#record,
 div#caps,
 div#goal,
-div#big {
+div#big
+         {
     color: white;
 }
 
