@@ -28,12 +28,39 @@ i.material-icons {
 
 .demo-card-square.mdl-card {
   width: 350px;
-  height: 350px;
+  height: 325px;
+  margin-left: 50px;
+  border-radius: 7px;
 }
 .demo-card-square > .mdl-card__title {
   color: #fff;
-  background:
-    url('https://pm1.narvii.com/6469/79020a8225038eb284db50e35b5e336a64f4cff0_128.jpg') bottom right 15% no-repeat #E9190F;
+  
+}
+
+div#rooney {
+    background:
+    url('http://d30pt6u9puc4m1.cloudfront.net/wp-content/uploads/mobile_images/ManUtd_Wayne_Rooney8.jpg') bottom right 15% no-repeat #E9190F;
+}
+
+div.mdl-card__actions.div.mdl-card--border {
+    background-color: #fff;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+div.mdl-card__actions {
+    font-size: 16px;
+    line-height: normal;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+div#bobby {
+    background:
+    url('http://www.ceroacero.es/img/noticias/433/img_62433.jpg') bottom right 15% no-repeat #E9190F;
+}
+
+a.mdl-button{
+    margin-left: 50px;
 }
 
 .logo {
@@ -170,7 +197,7 @@ div.titles {
 
 div.records {
     display: flex;
-    background-color: #000000;
+    background-color: #171D1C;
     border: 1px solid black;
     justify-content: space-between;
     flex-direction: column;
@@ -334,13 +361,15 @@ iframe.ucl1 {
     height: 300px;
     width: 500px;
     border: 3px solid black;
+    border-radius: 7px;
 }
 
 iframe.bike {
     display: flex;
     height: 300px;
     width: 500px;
-    border: 3px solid black;
+    border: 3px solid black; 
+    border-radius: 7px;
 }
 
 iframe.ucl2 {
@@ -350,6 +379,7 @@ iframe.ucl2 {
     margin-top: 10px;
     margin-right: 50px;
     border: 3px solid black;
+     border-radius: 7px;
 }
 
 iframe.becks {
@@ -358,6 +388,7 @@ iframe.becks {
     width: 500px;
     margin-left: 50px;
     border: 3px solid black;
+    border-radius: 7px;
 }
 
 span {
@@ -375,8 +406,29 @@ span#description{
 }
 
 h2.stars {
-    color: black;
+    display: flex;
+    align-content: center;
 }
+
+div.mdl-card__supporting-text {
+    color: #171D1C;
+}
+
+div.leg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div.legends {
+    background-color: #171D1C;
+    height: 1500px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
 
 
 
